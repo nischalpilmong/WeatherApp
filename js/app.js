@@ -15,12 +15,16 @@ searchBox.addEventListener('keypress', function(evt){
 });
 function displayResults(weather){
     console.log(weather);
+    /* Displaying the name and country of the searched place*/
     let city = document.querySelector('.location > .city');
     city.innerText = `${weather.name}, ${weather.sys.country}`;
-
+    /*Displaying the time and date when the search was made*/
     let now = new Date();
     let date = document.querySelector('.location > .date');
     date.innerText = dateBuilder(now);
+    /*Displaying the temperature*/
+    let temp = document.querySelector('.current > .temp');
+    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`
 }
 
 function dateBuilder(d){
