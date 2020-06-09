@@ -7,9 +7,10 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-image: url(../img/bg.jpg);
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    /* background-image: url(../img/bg.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: top center; */
 }
 
 .app-wrapper{
