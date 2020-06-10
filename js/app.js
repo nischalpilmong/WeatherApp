@@ -11,10 +11,10 @@ searchBox.addEventListener('keypress', function(evt){
                   return weather.json();
                })
               .then(displayResults);
+              searchBox.value = "";
        }
 });
 function displayResults(weather){
-    console.log(weather);
     /* Displaying the name and country of the searched place*/
     let city = document.querySelector('.location > .city');
     city.innerText = `${weather.name}, ${weather.sys.country}`;
