@@ -25,6 +25,12 @@ function displayResults(weather){
     /*Displaying the temperature*/
     let temp = document.querySelector('.current > .temp');
     temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`
+    /*Displaying the current weather*/
+    let weather_el = document.querySelector('.current > .weather');
+    weather_el.innerText = weather.weather[0].main;
+    /*Displaying the minimum and maximum temperature of the day*/ 
+    let highLow = document.querySelector('.high-low');
+    highLow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
 }
 
 function dateBuilder(d){
