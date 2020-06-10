@@ -26,6 +26,7 @@ body{
     position: absolute;
     font-size: 45px;
     font-family: 'Metal Mania', cursive;
+    letter-spacing: 5px;
 }
 header{
     display: flex;
